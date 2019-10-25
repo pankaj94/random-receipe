@@ -1,12 +1,39 @@
 $bg-color: yellow;
 $border-color: red;
+@font-face{
+  font-family: 'Montserrat';
+  src : url(https://fonts.googleapis.com/css?family=Montserrat&display=swap)
+}
+// @import 'https://fonts.googleapis.com/css?family=Montserrat&display=swap';
 
-.app {
-  font-family: helvetica, arial, sans-serif;
-  padding: 2em;
-  border: 5px solid $border-color;
+body{
+  display: flex;
+  flex-direction: column;
+  font-family: 'Montserrat';
+  font-size: 16px;
+}
+.ing-lists{
+  display: flex;
+    box-sizing: border-box;
+    flex-direction: row;
+    align-content: space-evenly;
+    flex-wrap: wrap;
+}
+.txt-center{
+  text-align: center;
+}
+.description{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-around;
+  width: 100%;
 
-  p {
-    background-color: $bg-color;
+  img{
+    width: 25%;
+    height:300px;
+  }
+  p{
+    width: 70%;
   }
 }
